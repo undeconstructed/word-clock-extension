@@ -228,7 +228,7 @@ function timeToWords(hours, minutes) {
 	else {
 		let phrase = APPROXIMATES[TURNS[wordMinutes]];
 		res += WORDS.it_is + ' ' + phrase[0] + ' ';
-		wordHours += phrase[1];
+		wordHours = (wordHours + phrase[1]) % 24;
 	}
 
 	if (wordHours == 0) {
