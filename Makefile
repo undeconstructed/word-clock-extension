@@ -1,9 +1,9 @@
 EXTENSION_NAME = word-clock
 NAME = Word Clock
 VERSION = 5
-URL = https://github.com/ebassi/word-clock-extension
+URL = https://github.com/undeconstructed/word-clock-extension
 
-UUID = $(EXTENSION_NAME)@emmanuelebassi.name
+UUID = $(EXTENSION_NAME)@undeconstructed.github.com
 SED = `which sed`
 ZIP = `which zip`
 
