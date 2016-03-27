@@ -128,16 +128,28 @@ const WORDS = {
 const APPROXIMATES = [
 	[ 'exactly', 0 ],
 	[ 'just after', 0 ],
-	[ 'ten past', 0 ],
-	[ 'a quarter past', 0 ],
-	[ 'half past', 0 ],
+	[ 'about ten past', 0 ],
+	[ 'about a quarter past', 0 ],
+	[ 'nearly half past', 0 ],
+	[ 'about half past', 0 ],
 	[ 'gone half past', 0 ],
-	[ 'a quarter to', 1 ],
-	[ 'ten to', 1 ],
+	[ 'about a quarter to', 1 ],
+	[ 'about ten to', 1 ],
 	[ 'almost', 1 ]
 ];
 
-const TURNS = [ 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 8, 8, 8, 8, 8 ];
+const TURNS = [
+	/* 00 */ 0, 0, 0,
+	/* 03 */ 1, 1, 1, 1, 1, 1,
+	/* 09 */ 2, 2, 2, 2, 2, 
+	/* 14 */ 3, 3, 3, 3, 3, 3, 3, 3, 3,
+	/* 23 */ 4, 4, 4, 4, 4, 4,
+	/* 29 */ 5, 5, 5, 5, 5, 5,
+	/* 35 */ 6, 6, 6, 6, 6,
+	/* 40 */ 7, 7, 7, 7, 7, 7, 7, 7,
+	/* 48 */ 8, 8, 8, 8, 8, 8, 8,
+	/* 55 */ 9, 9, 9, 9, 9
+];
 
 let settings = null;
 let dateMenu = null;
